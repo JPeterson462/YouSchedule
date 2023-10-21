@@ -50,3 +50,5 @@
 /Users/jpeterson/git/YouSchedule/YouSchedule.Portal/obj/Debug/netcoreapp3.1/YouSchedule.Portal.dll
 /Users/jpeterson/git/YouSchedule/YouSchedule.Portal/obj/Debug/netcoreapp3.1/YouSchedule.Portal.pdb
 /Users/jpeterson/git/YouSchedule/YouSchedule.Portal/obj/Debug/netcoreapp3.1/YouSchedule.Portal.genruntimeconfig.cache
+/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/bin/Debug/netcoreapp3.1/YouSchedule.Core.dll
+/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/bin/Debug/netcoreapp3.1/YouSchedule.Core.pdb

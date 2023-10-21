@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using YouSchedule.Predictor.Algorithm;
+using YouSchedule.Core;
 using YouSchedule.Predictor.Models;
 using YouSchedule.Predictor.Services;
 
@@ -57,13 +58,16 @@ namespace YouSchedule.Predictor.Controllers
             predictor.DataPoints = testSet1Mapped
                 .Select(t => new PredictorDataPoint() { SecondsSinceSunday = t.Item1, DurationOfVideo = t.Item2 }).ToList();
 
-            // clustering...
-            //Clustering c = new Clustering(testSet1Mapped.Select(x => x.Item1));
-
             var prediction1 = predictor.FindLongformVideoSchedule();
             var prediction2 = predictor.FindShortformVideoSchedule();
 
-            return Json(new Tuple<PredictedSchedule, PredictedSchedule>[] { prediction1, prediction2 } );
+            return Json(new CompositePredictedSchedule
+            {
+                HighPredictionLongform = prediction1.Item2,
+                LowPredictionLongform = prediction1.Item1,
+                HighPredictionShortform = prediction2.Item2,
+                LowPredictionShortform = prediction2.Item1
+            });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

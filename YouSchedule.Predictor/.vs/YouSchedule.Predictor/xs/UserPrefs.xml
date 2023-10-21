@@ -1,26 +1,24 @@
 ﻿<Properties StartupConfiguration="{0F7DD624-AA5C-4F7E-AA8F-AE1A836D3FB1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/PredictedSchedule.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../YouSchedule.Core/RelativeDateTime.cs">
     <Files>
-      <File FileName="Controllers/HomeController.cs" Line="65" Column="1" />
-      <File FileName="Algorithm/Mappers.cs" Line="18" Column="10" />
-      <File FileName="Data/Test.cs" Line="1" Column="1" />
-      <File FileName="Algorithm/Clustering.cs" Line="34" Column="76" />
-      <File FileName="Models/IntegerGroup.cs" Line="39" Column="33" />
-      <File FileName="Services/PredictorService.cs" Line="31" Column="68" />
-      <File FileName="Models/RelativeDateTime.cs" Line="19" Column="1" />
-      <File FileName="Models/PredictedSchedule.cs" Line="1" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="66" Column="17" />
+      <File FileName="../YouSchedule.Core/CompositePredictedSchedule.cs" Line="6" Column="96" />
+      <File FileName="../YouSchedule.Core/PredictedSchedule.cs" Line="1" Column="1" />
+      <File FileName="../YouSchedule.Core/RelativeDateTime.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="YouSchedule.Predictor" expanded="True">
+            <Node name="YouSchedule.Core" expanded="True">
+              <Node name="RelativeDateTime.cs" selected="True" />
+            </Node>
             <Node name="YouSchedule.Predictor" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Algorithm" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="PredictedSchedule.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>

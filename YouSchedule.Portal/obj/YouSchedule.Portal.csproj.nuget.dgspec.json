@@ -4,14 +4,14 @@
     "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj": {}
   },
   "projects": {
-    "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj": {
+    "/Users/jpeterson/git/YouSchedule/YouSchedule.Core/YouSchedule.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj",
-        "projectName": "YouSchedule.Portal",
-        "projectPath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj",
+        "projectUniqueName": "/Users/jpeterson/git/YouSchedule/YouSchedule.Core/YouSchedule.Core.csproj",
+        "projectName": "YouSchedule.Core",
+        "projectPath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Core/YouSchedule.Core.csproj",
         "packagesPath": "/Users/jpeterson/.nuget/packages/",
-        "outputPath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/obj/",
+        "outputPath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jpeterson/.config/NuGet/NuGet.Config"
@@ -37,10 +37,70 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj",
+        "projectName": "YouSchedule.Portal",
+        "projectPath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj",
+        "packagesPath": "/Users/jpeterson/.nuget/packages/",
+        "outputPath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jpeterson/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/jpeterson/git/YouSchedule/YouSchedule.Core/YouSchedule.Core.csproj": {
+                "projectPath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Core/YouSchedule.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[3.1.26, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

@@ -34,3 +34,5 @@
 /Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/obj/Debug/netcoreapp3.1/YouSchedule.Predictor.GeneratedMSBuildEditorConfig.editorconfig
 /Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/obj/Debug/netcoreapp3.1/scopedcss/bundle/YouSchedule.Predictor.styles.css
+/Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/bin/Debug/netcoreapp3.1/YouSchedule.Core.dll
+/Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/bin/Debug/netcoreapp3.1/YouSchedule.Core.pdb

@@ -1,5 +1,6 @@
 ﻿using System;
-namespace YouSchedule.Predictor.Algorithm
+
+namespace YouSchedule.Core
 {
     public static class Utils
     {

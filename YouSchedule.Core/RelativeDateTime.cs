@@ -1,7 +1,6 @@
 ﻿using System;
-using YouSchedule.Predictor.Algorithm;
 
-namespace YouSchedule.Predictor.Models
+namespace YouSchedule.Core
 {
     public class RelativeDateTime
     {

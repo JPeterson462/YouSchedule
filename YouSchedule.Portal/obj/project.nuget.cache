@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4y6V8Wbkbz1DrNHytCUyknhOySbWuK0SFNY4eXbtt+85b0XDMMA8kL7dBjrPk+RClxUKLa5OCrdb45Deicl/gQ==",
+  "dgSpecHash": "IK/kl0/8t5zHXNrkmhNSQGN3KPejUU23b/sprTwW4SI+wewWhkQdhsdkiOH7SUBnRareQKN19lfW8djSgIQvuw==",
   "success": true,
   "projectFilePath": "/Users/jpeterson/git/YouSchedule/YouSchedule.Portal/YouSchedule.Portal.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,7 @@
     "/Users/jpeterson/.nuget/packages/microsoft.extensions.options/3.1.26/microsoft.extensions.options.3.1.26.nupkg.sha512",
     "/Users/jpeterson/.nuget/packages/microsoft.extensions.options.configurationextensions/3.1.26/microsoft.extensions.options.configurationextensions.3.1.26.nupkg.sha512",
     "/Users/jpeterson/.nuget/packages/microsoft.extensions.primitives/3.1.26/microsoft.extensions.primitives.3.1.26.nupkg.sha512",
-    "/Users/jpeterson/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512"
+    "/Users/jpeterson/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace YouSchedule.Predictor.Models
+namespace YouSchedule.Core
 {
     public class PredictedSchedule
     {

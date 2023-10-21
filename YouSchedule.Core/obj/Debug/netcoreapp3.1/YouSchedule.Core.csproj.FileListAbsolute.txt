@@ -1,0 +1,10 @@
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/bin/Debug/netcoreapp3.1/YouSchedule.Core.deps.json
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/bin/Debug/netcoreapp3.1/YouSchedule.Core.dll
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/bin/Debug/netcoreapp3.1/YouSchedule.Core.pdb
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/Debug/netcoreapp3.1/YouSchedule.Core.csproj.AssemblyReference.cache
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/Debug/netcoreapp3.1/YouSchedule.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/Debug/netcoreapp3.1/YouSchedule.Core.AssemblyInfoInputs.cache
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/Debug/netcoreapp3.1/YouSchedule.Core.AssemblyInfo.cs
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/Debug/netcoreapp3.1/YouSchedule.Core.csproj.CoreCompileInputs.cache
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/Debug/netcoreapp3.1/YouSchedule.Core.dll
+/Users/jpeterson/git/YouSchedule/YouSchedule.Core/obj/Debug/netcoreapp3.1/YouSchedule.Core.pdb

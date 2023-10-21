@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using YouSchedule.Core;
 using YouSchedule.Predictor.Algorithm;
 using YouSchedule.Predictor.Models;
 

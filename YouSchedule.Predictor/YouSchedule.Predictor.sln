@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouSchedule.Predictor", "YouSchedule.Predictor.csproj", "{0F7DD624-AA5C-4F7E-AA8F-AE1A836D3FB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouSchedule.Core", "..\YouSchedule.Core\YouSchedule.Core.csproj", "{F3A99554-AF09-4536-B3A2-6129C4B03F75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{0F7DD624-AA5C-4F7E-AA8F-AE1A836D3FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F7DD624-AA5C-4F7E-AA8F-AE1A836D3FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F7DD624-AA5C-4F7E-AA8F-AE1A836D3FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A99554-AF09-4536-B3A2-6129C4B03F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A99554-AF09-4536-B3A2-6129C4B03F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A99554-AF09-4536-B3A2-6129C4B03F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A99554-AF09-4536-B3A2-6129C4B03F75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,5 @@
 ﻿using System;
+using YouSchedule.Core;
 using YouSchedule.Predictor.Models;
 
 namespace YouSchedule.Predictor.Algorithm
