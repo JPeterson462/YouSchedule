@@ -1,21 +1,23 @@
 ﻿<Properties StartupConfiguration="{0F7DD624-AA5C-4F7E-AA8F-AE1A836D3FB1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Algorithm/Clustering.cs">
     <Files>
-      <File FileName="Controllers/HomeController.cs" Line="49" Column="101" />
-      <File FileName="Algorithm/Mappers.cs" Line="7" Column="6" />
-      <File FileName="Algorithm/Utils.cs" Line="10" Column="10" />
+      <File FileName="Controllers/HomeController.cs" Line="56" Column="29" />
+      <File FileName="Algorithm/Mappers.cs" Line="13" Column="65" />
+      <File FileName="Algorithm/Utils.cs" Line="9" Column="19" />
       <File FileName="Data/Test.cs" Line="6" Column="90" />
+      <File FileName="Algorithm/Clustering.cs" Line="10" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="YouSchedule.Predictor" expanded="True">
             <Node name="YouSchedule.Predictor" expanded="True">
-              <Node name="Algorithm" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
+              <Node name="Algorithm" expanded="True">
+                <Node name="Clustering.cs" selected="True" />
               </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
           </Node>
@@ -36,7 +38,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/Services/YouTubeService.cs" relfile="Services/YouTubeService.cs" line="1770" column="1" />
-      <Breakpoint file="/Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/Controllers/HomeController.cs" relfile="Controllers/HomeController.cs" line="53" column="1" />
+      <Breakpoint file="/Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/Controllers/HomeController.cs" relfile="Controllers/HomeController.cs" line="58" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

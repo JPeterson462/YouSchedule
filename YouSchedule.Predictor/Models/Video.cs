@@ -11,7 +11,7 @@ namespace YouSchedule.Predictor.Models
         public string Title { get; set; }
         public DateTimeOffset DatePublished { get; set; }
         public string Duration { get; set; }
-        public int DurationSeconds { get; set; }
+        public uint DurationSeconds { get; set; }
 
         public void Calculate()
         {
@@ -19,21 +19,21 @@ namespace YouSchedule.Predictor.Models
             var match = Regex.Match(Duration, "PT(\\d+)S");
             if (match != null && match.Success)
             {
-                DurationSeconds = int.Parse(match.Groups[1].Value);
+                DurationSeconds = uint.Parse(match.Groups[1].Value);
             }
             else
             {
                 match = Regex.Match(Duration, "PT(\\d+)M(\\d+)S");
                 if (match != null && match.Success)
                 {
-                    DurationSeconds = int.Parse(match.Groups[1].Value) * 60 + int.Parse(match.Groups[2].Value);
+                    DurationSeconds = uint.Parse(match.Groups[1].Value) * 60 + uint.Parse(match.Groups[2].Value);
                 }
                 else
                 {
                     match = Regex.Match(Duration, "PT(\\d+)H(\\d+)M(\\d+)S");
                     if (match != null && match.Success)
                     {
-                        DurationSeconds = int.Parse(match.Groups[1].Value) * 60*60 + int.Parse(match.Groups[2].Value) * 60 + int.Parse(match.Groups[3].Value);
+                        DurationSeconds = uint.Parse(match.Groups[1].Value) * 60*60 + uint.Parse(match.Groups[2].Value) * 60 + uint.Parse(match.Groups[3].Value);
                     }
                 }
             }
