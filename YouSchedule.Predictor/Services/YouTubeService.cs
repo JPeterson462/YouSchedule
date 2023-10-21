@@ -5,13 +5,14 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using YouSchedule.Predictor.Data;
 using YouSchedule.Predictor.Models;
 
 namespace YouSchedule.Predictor.Services
 {
     public class YouTubeService
     {
-        private string ApiKey = "<API KEY>";
+        private string ApiKey = Test.ApiKey;
 
         private string BaseUrl = "https://youtube.googleapis.com/youtube/v3";
         private HttpClient httpClient;

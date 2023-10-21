@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using YouSchedule.Predictor.Algorithm;
 using YouSchedule.Predictor.Models;
 using YouSchedule.Predictor.Services;
 
@@ -31,7 +32,7 @@ namespace YouSchedule.Predictor.Controllers
 
             // find the videos
             string channelId = await service.FindChannelIdByUsername("SmoshGames");
-            IEnumerable<Video> videos = await service.FindVideosByChannel(channelId, DateTimeOffset.UtcNow.AddDays(-21), null);
+            IEnumerable<Video> videos = await service.FindVideosByChannel(channelId, DateTimeOffset.UtcNow.AddDays(-28), null);
             // pull more detailed statistics
             List<Video> videosWithStatistics = new List<Video>();
             foreach (var v in videos)
@@ -42,7 +43,10 @@ namespace YouSchedule.Predictor.Controllers
             }
 
             // map the videos to (seconds since sunday, seconds duration)
+            var data = videosWithStatistics
+                .Select(Mappers.MapVideoToOffsetDuration);
 
+            var testSet1 = string.Join(", ", data.Select(p => "(" + p.Item1 + ", " + p.Item2 + ")"));
 
             // clustering...
 

@@ -8,10 +8,12 @@
     <None Remove="Services\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Algorithm\" />
+    <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Algorithm\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
