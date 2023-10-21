@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{0F7DD624-AA5C-4F7E-AA8F-AE1A836D3FB1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Algorithm/Mappers.cs">
+    <Files>
+      <File FileName="Controllers/HomeController.cs" Line="25" Column="10" />
+      <File FileName="Services/YouTubeService.cs" />
+      <File FileName="Models/VideoSearchResponse.cs" />
+      <File FileName="Models/SearchResponse.cs" />
+      <File FileName="Models/Video.cs" />
+      <File FileName="Models/VideoDetailsSearchResponse.cs" />
+      <File FileName="Algorithm/Mappers.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="YouSchedule.Predictor" expanded="True">
+            <Node name="YouSchedule.Predictor" expanded="True">
+              <Node name="Algorithm" expanded="True">
+                <Node name="Mappers.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>results.OrderBy(r =&gt; r.DurationSeconds).Select(r =&gt; r.Id+ " " + r.DurationSeconds + " " + r.Title)</Value>
+          <Value>results.Count</Value>
+          <Value>video.Duration</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.YouSchedule.Predictor PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/Services/YouTubeService.cs" relfile="Services/YouTubeService.cs" line="1770" column="1" />
+      <Breakpoint file="/Users/jpeterson/git/YouSchedule/YouSchedule.Predictor/Controllers/HomeController.cs" relfile="Controllers/HomeController.cs" line="49" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
