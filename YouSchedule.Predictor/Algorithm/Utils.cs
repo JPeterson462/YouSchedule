@@ -5,6 +5,10 @@ namespace YouSchedule.Predictor.Algorithm
     {
         public static readonly int SecondsPerWeek = 7 * 24 * 60 * 60; // technically not true during daylight savings, but shouldn't affect clustering calculations
 
+        public static readonly int SecondsPerDay = 24 * 60 * 60;
+
+        public static readonly int SecondsPerHour = 60 * 60;
+
         public static DateTimeOffset GetStartOfWeek(DateTimeOffset dateTime, DayOfWeek startOfWeek = DayOfWeek.Sunday)
         {
             int diff = (7 + (dateTime.DayOfWeek - startOfWeek)) % 7;

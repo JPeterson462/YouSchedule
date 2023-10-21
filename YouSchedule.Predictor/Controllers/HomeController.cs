@@ -53,14 +53,17 @@ namespace YouSchedule.Predictor.Controllers
                 new Tuple<int, int>(241204, 54), new Tuple<int, int>(154810, 33), new Tuple<int, int>(586804, 56), new Tuple<int, int>(154809, 49), new Tuple<int, int>(61227, 2164), new Tuple<int, int>(320432, 2509), new Tuple<int, int>(61213, 2714), new Tuple<int, int>(61211, 3312), new Tuple<int, int>(320432, 2827), new Tuple<int, int>(430644, 5686), new Tuple<int, int>(61214, 2441), new Tuple<int, int>(431435, 6561), new Tuple<int, int>(586801, 55), new Tuple<int, int>(493214, 1856), new Tuple<int, int>(320428, 2418), new Tuple<int, int>(345614, 17), new Tuple<int, int>(21, 34), new Tuple<int, int>(345602, 21), new Tuple<int, int>(586814, 53), new Tuple<int, int>(154806, 58), new Tuple<int, int>(154811, 19), new Tuple<int, int>(241230, 21), new Tuple<int, int>(414012, 22), new Tuple<int, int>(345606, 55), new Tuple<int, int>(586804, 47), new Tuple<int, int>(493222, 1852), new Tuple<int, int>(430703, 5732), new Tuple<int, int>(493213, 3736), new Tuple<int, int>(414014, 44), new Tuple<int, int>(320410, 6004), new Tuple<int, int>(241210, 28), new Tuple<int, int>(345614, 53), new Tuple<int, int>(431702, 6738), new Tuple<int, int>(241231, 43)
             };
 
+            PredictorService predictor = new PredictorService();
+            predictor.DataPoints = testSet1Mapped
+                .Select(t => new PredictorDataPoint() { SecondsSinceSunday = t.Item1, DurationOfVideo = t.Item2 }).ToList();
+
             // clustering...
-            Clustering c = new Clustering(testSet1Mapped.Select(x => x.Item1));
+            //Clustering c = new Clustering(testSet1Mapped.Select(x => x.Item1));
 
-            var g1 = c.FindKDiameterGroups(720, (x, y) => Utils.FindModulusDistance(x, y, Utils.SecondsPerWeek));
-            var g2 = c.FindKDiameterGroups(240, (x, y) => Utils.FindModulusDistance(x, y, Utils.SecondsPerWeek));
-            var g3 = c.FindKDiameterGroups(60, (x, y) => Utils.FindModulusDistance(x, y, Utils.SecondsPerWeek));
+            var prediction1 = predictor.FindLongformVideoSchedule();
+            var prediction2 = predictor.FindShortformVideoSchedule();
 
-            return Json("");
+            return Json(new Tuple<PredictedSchedule, PredictedSchedule>[] { prediction1, prediction2 } );
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
