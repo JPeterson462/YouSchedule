@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{53446A8E-6C43-4B79-A7F7-555B46347398}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClientApp/src/app/fetch-data/fetch-data.component.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClientApp/package.json">
     <Files>
       <File FileName="Controllers/WeatherForecastController.cs" Line="16" Column="6" />
-      <File FileName="ClientApp/src/app/nav-menu/nav-menu.component.html" />
-      <File FileName="ClientApp/src/app/fetch-data/fetch-data.component.ts" Line="26" Column="30" />
-      <File FileName="ClientApp/src/app/fetch-data/fetch-data.component.html" Line="1" Column="1" />
+      <File FileName="ClientApp/src/app/nav-menu/nav-menu.component.html" Line="29" Column="16" />
+      <File FileName="ClientApp/src/app/fetch-data/fetch-data.component.ts" Line="3" Column="14" />
+      <File FileName="ClientApp/src/app/fetch-data/fetch-data.component.html" Line="6" Column="31" />
+      <File FileName="ClientApp/src/main.ts" Line="18" Column="1" />
+      <File FileName="ClientApp/package.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,14 +23,13 @@
                 </Node>
                 <Node name="src" expanded="True">
                   <Node name="app" expanded="True">
-                    <Node name="fetch-data" expanded="True">
-                      <Node name="fetch-data.component.html" selected="True" />
-                    </Node>
+                    <Node name="fetch-data" expanded="True" />
                     <Node name="home" expanded="True" />
                     <Node name="nav-menu" expanded="True" />
                   </Node>
                   <Node name="environments" expanded="True" />
                 </Node>
+                <Node name="package.json" expanded="True" selected="True" />
               </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Pages" expanded="True" />
@@ -36,12 +37,20 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>results.OrderBy(r =&gt; r.DurationSeconds).Select(r =&gt; r.Id+ " " + r.DurationSeconds + " " + r.Title)</Value>
+          <Value>results.Count</Value>
+          <Value>video.Duration</Value>
+          <Value>y</Value>
+          <Value>x</Value>
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.YouSchedule.Portal PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.ItemProperties.YouSchedule.Core FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

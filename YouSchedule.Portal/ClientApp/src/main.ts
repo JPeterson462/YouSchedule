@@ -8,6 +8,14 @@ export function getBaseUrl() {
   return document.getElementsByTagName('base')[0].href;
 }
 
+/*
+import '../scss/styles.scss';
+import * as mdb from 'mdb-ui-kit';
+//window.mdb = mdb;
+
+import 'mdb-ui-kit/mdb-ui-kit/src/scss/mdb.free.scss';
+*/
+
 const providers = [
   { provide: 'BASE_URL', useFactory: getBaseUrl, deps: [] }
 ];
