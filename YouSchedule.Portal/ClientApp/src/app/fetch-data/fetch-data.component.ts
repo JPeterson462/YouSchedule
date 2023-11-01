@@ -1,7 +1,5 @@
 ﻿import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-// @ts-ignore
-import Chart from 'chart.js/auto';
 
 @Component({
   selector: 'app-fetch-data',
@@ -17,7 +15,7 @@ export class FetchDataComponent {
         const canvas = <HTMLCanvasElement>document.getElementById('longFormVideos');
         //const ctx = canvas.getContext('2d');
 
-        var myLineChart = new Chart(canvas, {
+        /*var myLineChart = new Chart(canvas, {
             type: 'line',
             data: {
                 //labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -48,7 +46,7 @@ export class FetchDataComponent {
             options: {
                 responsive: true
             }
-        });
+        });*/
     }, error => console.error(error));
   }
 }
