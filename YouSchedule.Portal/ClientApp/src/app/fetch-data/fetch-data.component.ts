@@ -1,54 +1,76 @@
 ﻿import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import { Chart } from 'chart.js';
+
+import { AfterViewInit } from '@angular/core';
+
 @Component({
-  selector: 'app-fetch-data',
-  templateUrl: './fetch-data.component.html'
+    selector: 'app-fetch-data',
+    templateUrl: './fetch-data.component.html',
+    styleUrls: ['./fetch-data.component.css']
 })
-export class FetchDataComponent {
-  public prediction: CompositePredictedSchedule;
+export class FetchDataComponent implements AfterViewInit {
+    public prediction: CompositePredictedSchedule;
 
-  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-    http.get<CompositePredictedSchedule>(baseUrl + 'predictor').subscribe(result => {
-        this.prediction = result;
+    http: HttpClient;
+    baseUrl: string;
 
-        const canvas = <HTMLCanvasElement>document.getElementById('longFormVideos');
-        //const ctx = canvas.getContext('2d');
+    constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+        this.http = http;
+        this.baseUrl = baseUrl;
+    }
 
-        /*var myLineChart = new Chart(canvas, {
-            type: 'line',
+    ngAfterViewInit() {
+        this.http.get<CompositePredictedSchedule>(this.baseUrl + 'predictor').subscribe(result => {
+            this.prediction = result;
+            this.graphPredictions();
+        }, error => console.error(error));
+    }
+
+    graphPredictions() {
+        const canvas = <HTMLCanvasElement>document.getElementById('longFormPredictions');
+        const ctx = canvas.getContext('2d');
+
+        var myChart = new Chart(ctx, {
+            type: 'bar',
             data: {
-                //labels: ["January", "February", "March", "April", "May", "June", "July"],
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
                 datasets: [{
-                    label: "High Prediction Long Form",
-                    data: [65, 59, 80, 81, 56, 55, 40],
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
                     backgroundColor: [
-                        'rgba(105, 0, 132, .2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
                     ],
                     borderColor: [
-                        'rgba(200, 99, 132, .7)',
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
                     ],
-                    borderWidth: 2
-                },
-                {
-                    label: "Low Prediction Long Form",
-                    data: [28, 48, 40, 19, 86, 27, 90],
-                    backgroundColor: [
-                        'rgba(0, 137, 132, .2)',
-                    ],
-                    borderColor: [
-                        'rgba(0, 10, 130, .7)',
-                    ],
-                    borderWidth: 2
-                }
-                ]
+                    borderWidth: 1
+                }]
             },
             options: {
-                responsive: true
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
             }
-        });*/
-    }, error => console.error(error));
-  }
+        });
+
+        var tst = false;
+    }
 }
 
 interface CompositePredictedSchedule {
